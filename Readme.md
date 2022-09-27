@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Анатолий Щербин](https://up.htmlacademy.ru/htmlcss/35/user/1554631).
-* Наставник: `Неизвестно`.
+* Наставник:[Анатолий Долгов](https://htmlacademy.ru/profile/dolgov_anatoly).``.
 
 ---
 
