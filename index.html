@@ -31,13 +31,13 @@
         </ul>
         <ul class="menu__list">
           <li class="menu__list-item">
-            <a class="menu__list-link" href="#">Каталог товаров</a>
+            <a class="menu__list-link" href="catalog.html">Каталог товаров</a>
             <ul class="menu__select-list">
               <li class="menu__select-list-item">
                 <a class="menu__select-list-link" href="#">Виртуальная реальность</a>
               </li>
               <li class="menu__select-list-item">
-                <a class="menu__select-list-link" href="catalog-monopods.html">Моноподы для cелфи</a>
+                <a class="menu__select-list-link" href="catalog.html">Моноподы для cелфи</a>
               </li>
               <li class="menu__select-list-item">
                 <a class="menu__select-list-link" href="#">Экшн-камеры</a>
@@ -74,8 +74,6 @@
         <ul class="slider__list">
           <li class="slider__item">
             <div class="slider__image-wrapper">
-              <button class="slider__image-arrow" type="button"><span class="visually-hidden">пролистать влево.</span></button>
-              <button class="slider__image-arrow slider__image-arrow--right" type="button"><span class="visually-hidden">пролистать вправо.</span></button>
               <img class="slider__image" src="" alt="квадрокоптер" width="" height="">
             </div>
             <h3 class="slider__title">Порхает как бабочка, жалит как пчела!</h3>
@@ -93,8 +91,6 @@
           </li>
           <li class="slider__item">
             <div class="slider__image-wrapper">
-              <button class="slider__image-arrow" type="button"><span class="visually-hidden">пролистать влево.</span></button>
-              <button class="slider__image-arrow slider__image-arrow--right" type="button"><span class="visually-hidden">пролистать вправо.</span></button>
               <img class="slider__image" src="" alt="квадрокоптер" width="" height="">
             </div>
             <h3 class="slider__title">Худеем правильно!</h3>
@@ -108,8 +104,6 @@
           </li>
           <li class="slider__item">
             <div class="slider__image-wrapper">
-              <button class="slider__image-arrow" type="button"><span class="visually-hidden">пролистать влево.</span></button>
-              <button class="slider__image-arrow slider__image-arrow--right" type="button"><span class="visually-hidden">пролистать вправо.</span></button>
               <img class="slider__image" src="" alt="квадрокоптер" width="" height="">
             </div>
             <h3 class="slider__title">Делай селфи, как Бен Стиллер! </h3>
@@ -130,6 +124,14 @@
             </div>
           </li>
         </ul>
+        <ul class="slider__image-arrow-list">
+          <li>
+            <button class="slider__image-arrow" type="button"><span class="visually-hidden">пролистать влево.</span></button>
+          </li>
+          <li>
+            <button class="slider__image-arrow slider__image-arrow--right" type="button"><span class="visually-hidden">пролистать вправо.</span></button>
+          </li>
+        </ul>
         <div class="slider__toggles">
           <button class="slider__toggle slider__toggle--one slider__toggle--current" type="button"><span class="visually-hidden">первый слайд.</span></button>
           <button class="slider__toggle" type="button"><span class="visually-hidden">второй слайд.</span></button>
@@ -141,30 +143,42 @@
       <h2 class="visually-hidden">Категории товаров.</h2>
       <ul class="directory-categories__list">
         <li class="directory-categories__item">
-          <img class="directory-categories__image" src="#" alt="VR очки" width="" height="">
-          <span class="directory-categories__sign">Виртуальная
-            реальность</span>
+          <a class="directory-categories__link" href="#">
+            <img class="directory-categories__image" src="#" alt="VR очки" width="" height="">
+            <span class="directory-categories__sign">Виртуальная
+              реальность</span>
+          </a>
         </li>
         <li class="directory-categories__item">
-          <img class="directory-categories__image" src="#" alt="Моноподы" width="" height="">
-          <span class="directory-categories__sign">Моноподы
-            для селфи</span>
+          <a class="directory-categories__link" href="catalog.html">
+            <img class="directory-categories__image" src="#" alt="Моноподы" width="" height="">
+            <span class="directory-categories__sign">Моноподы
+              для селфи</span>
+          </a>
         </li>
         <li class="directory-categories__item">
-          <img class="directory-categories__image" src="#" alt="Камеры" width="" height="">
-          <span class="directory-categories__sign">Экшн-камеры</span>
+          <a class="directory-categories__link" href="#">
+            <img class="directory-categories__image" src="#" alt="Камеры" width="" height="">
+            <span class="directory-categories__sign">Экшн-камеры</span>
+          </a>
         </li>
         <li class="directory-categories__item">
-          <img class="directory-categories__image" src="#" alt="Фитнес-браслеты" width="" height="">
-          <span class="directory-categories__sign">Фитнес-браслеты</span>
+          <a class="directory-categories__link" href="#">
+            <img class="directory-categories__image" src="#" alt="Фитнес-браслеты" width="" height="">
+            <span class="directory-categories__sign">Фитнес-браслеты</span>
+          </a>
         </li>
         <li class="directory-categories__item">
-          <img class="directory-categories__image" src="#" alt="Умные часы" width="" height="">
-          <span class="directory-categories__sign">Умные часы</span>
+          <a class="directory-categories__link" href="#">
+            <img class="directory-categories__image" src="#" alt="Умные часы" width="" height="">
+            <span class="directory-categories__sign">Умные часы</span>
+          </a>
         </li>
         <li class="directory-categories__item">
-          <img class="directory-categories__image" src="#" alt="Квадрокоптеры" width="" height="">
-          <span class="directory-categories__sign">Квадрокоптеры</span>
+          <a class="directory-categories__link" href="#">
+            <img class="directory-categories__image" src="#" alt="Квадрокоптеры" width="" height="">
+            <span class="directory-categories__sign">Квадрокоптеры</span>
+          </a>
         </li>
       </ul>
     </section>
@@ -283,17 +297,17 @@
       <h2 class="visually-hidden">Социальные сети.</h2>
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link" href="#">
+          <a class="social__link" href="tg://resolve?domain=htmlacademy">
             <img class="social__icon" src="#" alt="Telegram.">
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="#">
+          <a class="social__link" href="https://www.youtube.com/c/HTMLAcademyRUS">
             <img class="social__icon" src="#" alt="YouTube.">
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="#">
+          <a class="social__link" href="https://twitter.com/htmlacademy_ru">
             <img class="social__icon" src="#" alt="Twitter.">
           </a>
         </li>
