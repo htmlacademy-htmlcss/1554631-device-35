@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles/style.css">
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
   <title>device</title>
 </head>
 <body>
@@ -33,7 +34,7 @@
           <li class="menu__user-list-item">
             <a class="menu__user-list-link menu__user-list-link--compare" href="#">Сравнить</a>
           </li>
-          <li class="menu__user-list-item menu__user-list-item--bascket menu__user-list-item--last-child">
+          <li class="menu__user-list-item menu__user-list-item--bascket">
             <a class="menu__user-list-link menu__user-list-link--bascket" href="#">Корзина</a>
             <div class="menu__user-list-number-goods-bascket-wrapper">
               <b class="visually-hidden">Число товаров в корзине.</b>
@@ -123,25 +124,25 @@
           <li class="menu__list-item">
             <a class="menu__list-link" href="#">Гарантия</a>
           </li>
-          <li class="menu__list-item menu__list-item--last-child">
+          <li class="menu__list-item">
             <a class="menu__list-link" href="#">Контакты</a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
-  <main class="site-index">
+  <main class="site-index stick-footer">
     <h1 class="visually-hidden">Главная страница.</h1>
     <section class="site-index__suggestions suggestions">
       <h2 class="visually-hidden">Предложения.</h2>
       <div class="suggestions__slider slider">
-        <ul class="slider__list" style="left: 0;">
-          <li class="slider__item">
-            <div class="slider__number-slid-wrapper">
-              <span class="slider__number-slid">01</span>
+        <ul class="slider__list">
+          <li class="slider__item slider__item--active">
+            <div class="slider__number-slide-wrapper">
+              <span class="slider__number-slide">01</span>
             </div>
             <div class="slider__image-wrapper">
-              <img class="slider__image" src="img/index/slider-copter.png" alt="квадрокоптер.">
+              <img class="slider__image" src="img/index/slider-copter.png" width="560" height="462" alt="квадрокоптер.">
             </div>
             <h3 class="slider__title">Порхает как бабочка, жалит как пчела!</h3>
             <p class="slider__description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
@@ -159,16 +160,16 @@
             </div>
           </li>
           <li class="slider__item">
-            <div class="slider__number-slid-wrapper">
-              <span class="slider__number-slid">02</span>
+            <div class="slider__number-slide-wrapper">
+              <span class="slider__number-slide">02</span>
             </div>
             <div class="slider__image-wrapper">
-              <img class="slider__image" src="img/index/slider-watch.png" alt="фитнес-браслеты.">
+              <img class="slider__image" src="img/index/slider-watch.png" width="560" height="560" alt="фитнес-браслеты.">
             </div>
             <h3 class="slider__title">Худеем правильно!</h3>
             <p class="slider__description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
             </p>
-            <a class="slider__link button" href="#">Подробнее</a>
+            <a class="slider__link button" href="#" tabindex="-1">Подробнее</a>
             <div class="slider__characters-wrapper">
               <div class="slider__characters">
                 <h4 class="slider__characters-title">48 часов</h4>
@@ -177,16 +178,16 @@
             </div>
           </li>
           <li class="slider__item">
-            <div class="slider__number-slid-wrapper">
-              <span class="slider__number-slid">03</span>
+            <div class="slider__number-slide-wrapper">
+              <span class="slider__number-slide">03</span>
             </div>
             <div class="slider__image-wrapper">
-              <img class="slider__image" src="img/index/slider-monopods.png" alt="селфи-палки.">
+              <img class="slider__image" src="img/index/slider-monopods.png" width="560" height="560" alt="селфи-палки.">
             </div>
             <h3 class="slider__title">Делай селфи, как Бен Стиллер! </h3>
             <p class="slider__description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
             </p>
-            <a class="slider__link button" href="#">Подробнее</a>
+            <a class="slider__link button" href="#" tabindex="-1">Подробнее</a>
             <div class="slider__characters-wrapper">
               <div class="slider__characters">
                 <h4 class="slider__characters-title">8,5 м</h4>
@@ -228,7 +229,7 @@
         </li>
         <li class="directory-categories__item">
           <a class="directory-categories__link" href="catalog.html">
-            <div class="directory-categories__image-wrapper">
+            <div class="directory-categories__image-wrapper directory-categories__image-wrapper--monopods">
               <img class="directory-categories__image" src="img/index/svg/category-monopod.svg" alt="Моноподы" width="86" height="117">
             </div>
             <span class="directory-categories__sign">Моноподы <br>
@@ -282,39 +283,37 @@
             <button class="slider-services__button button">Кредит</button>
           </li>
         </ul>
-        <div class="slider-services__container-list">
-          <ul class="slider-services__list" style="top: 0;">
-            <li class="slider-services__item slider-services__item--delivery">
-              <h3 class="slider-services__title">Доставка</h3>
-              <p class="slider-services__description">Мы с удовольствием доставим ваш товар прямо
-                к вашему подъезду совершенно бесплатно! Ведь
+        <ul class="slider-services__list">
+          <li class="slider-services__item slider-services__item--delivery slider-services__item--active">
+            <h3 class="slider-services__title">Доставка</h3>
+            <p class="slider-services__description">Мы с удовольствием доставим ваш товар прямо <br>
+                к вашему подъезду совершенно бесплатно! Ведь <br>
                 мы неплохо заработаем, поднимая его на ваш этаж.
-              </p>
-            </li>
-            <li class="slider-services__item slider-services__item--guarantee">
-              <h3 class="slider-services__title">Гарантия</h3>
-              <p class="slider-services__description">Если из-за возгорания купленного у нас товара у вас
+            </p>
+          </li>
+          <li class="slider-services__item slider-services__item--guarantee">
+            <h3 class="slider-services__title">Гарантия</h3>
+            <p class="slider-services__description">Если из-за возгорания купленного у нас товара у вас
                 сгорит дом — не переживайте, мы выдадим вам новый.
                 Товар, не дом, конечно же.
-              </p>
-            </li>
-            <li class="slider-services__item slider-services__item--credit">
-              <h3 class="slider-services__title">Кредит</h3>
-              <p class="slider-services__description">Залезть в долговую яму стало проще! Кредитные консультанты подберут
+            </p>
+          </li>
+          <li class="slider-services__item slider-services__item--credit">
+            <h3 class="slider-services__title">Кредит</h3>
+            <p class="slider-services__description">Залезть в долговую яму стало проще! Кредитные консультанты подберут
                 для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.
-              </p>
-            </li>
-          </ul>
-        </div>
+            </p>
+          </li>
+        </ul>
       </div>
     </section>
     <section class="site-index__delivery delivery">
       <h2 class="visually-hidden">Доставка.</h2>
         <button class="delivery__button" type="button">
           Доставим редкий товар под заказ
-          <div class="delivery__tooltype tooltype">
-            <p class="tooltype-description">"Какой-то текст"</p>
-          </div>
+          <span class="delivery__tooltip tooltip">
+            <span class="tooltip-description">"Какой-то текст"</span>
+          </span>
         </button>
     </section>
     <section class="site-index__contacts contacts">
@@ -343,7 +342,7 @@
           <div class="contacts__addres">
             <h4 class="contacts__address-title">Интернет-магазин «Девайс»</h4>
             <p class="contacts__address-description"> Санкт-Петербург, набережная реки Карповки, 5, литера П. </p>
-            <a class="contacts__addres-phone" href="tel: +7 (812) 812-12-12">+7 (812) 812-12-12</a>
+            <a class="contacts__addres-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
           </div>
           <div class="contacts__time-work">
             <h4 class="contacts__time-work-title">Время работы</h4>
@@ -402,12 +401,12 @@
           <h2 class="visually-hidden">Социальные сети.</h2>
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link" href="tg://resolve?domain=htmlacademy" target="_blank">
+              <a class="social__link" href="https://t.me/htmlacademy" target="_blank">
                 <img class="social__icon" src="img/index/svg/telegram-icon.svg" alt="Telegram." width="13" height="11">
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="https://www.youtube.com/c/HTMLAcademyRUS" target="_blank">
+              <a class="social__link" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
                 <img class="social__icon" src="img/index/svg/youtube-icon.svg" alt="YouTube." width="16" height="11">
               </a>
             </li>
@@ -422,7 +421,7 @@
       <div class="footer__container-united">
         <section class="footer__phone phone-footer">
           <h2 class="visually-hidden">Телефон магазина Device.</h2>
-          <a class="phone-footer__link" href="tel: +7 (812) 812-12-12">Тел.: +7 (812) 812-12-12</a>
+          <a class="phone-footer__link" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
         </section>
         <section class="footer__copyright copyright">
           <h2 class="visually-hidden">Компания-разработчик.</h2>
@@ -445,40 +444,42 @@
       <form class="modal-window-delivery__form" action="https://echo.htmlacademy.ru/" method="get">
         <label class="modal-window-delivery__form-lable">
           <span class="modal-window-delivery__form-lable-sign">Ваше имя:</span>
-          <div class="modal-window-delivery__wrapper-form-input input-wrapper-united input-wrapper-united--name">
-            <input class="modal-window-delivery__form-name input--name" type="name" name="modal-delivery-name" placeholder="Введите имя">
+          <span class="modal-window-delivery__wrapper-form-input input-wrapper-united input-wrapper-united--name">
+            <input class="modal-window-delivery__form-name input--name" type="text" name="modal-delivery-name" placeholder="Введите имя">
             <span class="input-sign">Добавьте имя</span>
             <span class="input-sign input-sign--invalid">Введите другое имя!</span>
-          </div>
+          </span>
         </label>
         <label class="modal-window-delivery__form-lable">
           <span class="modal-window-delivery__form-lable-sign">Ваш e-mail:</span>
-          <div class="modal-window-delivery__wrapper-form-input input-wrapper-united input-wrapper-united--mail">
+          <span class="modal-window-delivery__wrapper-form-input input-wrapper-united input-wrapper-united--mail">
             <input class="modal-window-delivery__form-mail input--mail input--mail-second" type="email" name="modal-delivery-mail" placeholder="Ваш e-mail" value="почта">
             <span class="input-sign input-sign--invalid">Забавный у вас адрес</span>
-          </div>
+          </span>
         </label>
         <label class="modal-window-delivery__form-lable modal-window-delivery__form-lable--description">
           <span class="modal-window-delivery__form-lable-sign">Что нужно привезти:</span>
           <textarea class="modal-window-delivery__form-description input--name" name="modal-delivery-description-directory"></textarea>
         </label>
-        <label for="modal-window-delivery__form-amount" class="modal-window-delivery__form-lable modal-window-delivery__form-lable--number">
-          <span class="modal-window-delivery__form-lable-sign">Количество:</span>
-          <div class="modal-window-delivery__tooltipe tooltype tooltipe--second">
-            <p class="tooltype-description">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям
-              к провозу багажа.</p>
-          </div>
-          <div class="modal-window-delivery__form-amount-wrapper">
-            <button class="modal-window-delivery__form-amount-button modal-window-delivery__form-amount-button--minus">
+        <div class="modal-window-delivery__form-amount">
+          <label class="modal-window-delivery__form-lable modal-window-delivery__form-lable--number" for="modal-window-delivery__form-amount-input">
+            <span class="modal-window-delivery__form-lable-sign">Количество:</span>
+            <span class="modal-window-delivery__tooltip tooltip tooltip--second">
+              <span class="tooltip-description">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям
+                к провозу багажа.</span>
+            </span>
+          </label>
+          <div class="modal-window-delivery__form-amount-input-wrapper">
+            <button class="modal-window-delivery__form-amount-button modal-window-delivery__form-amount-button--minus" type="button">
               <span class="visually-hidden">Уменьшить число товара.</span>
             </button>
-            <input id="modal-window-delivery__form-amount" class="modal-window-delivery__form-amount" type="number" name="modal-delivery-amount" value="1">
-            <span class="input-sign input-sign--invalid">Укажите число</span>
-            <button class="modal-window-delivery__form-amount-button">
+            <button class="modal-window-delivery__form-amount-button" type="button">
               <span class="visually-hidden">Увеличить число товара.</span>
             </button>
+            <input class="modal-window-delivery__form-amount-input" id="modal-window-delivery__form-amount-input" type="number" name="modal-delivery-amount" value="1">
+            <span class="input-sign input-sign--invalid">Укажите число</span>
           </div>
-        </label>
+        </div>
         <button class="modal-window-delivery__form-button-submit button" type="submit">Отправить</button>
       </form>
     </div>
