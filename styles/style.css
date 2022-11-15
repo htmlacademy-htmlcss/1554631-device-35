@@ -33,6 +33,7 @@
 /* normalise */
 html {
   height: 100%;
+  overflow: scroll;
 }
 
 body {
@@ -40,7 +41,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 320px;
+  min-width: 1080px;
   font-family: "Rubik", "Arial", sans-serif;
   word-break: break-word;
   color: #000000;
@@ -1361,18 +1362,15 @@ img {
 
 .slider__item {
   position: relative;
-  display: grid;
+  display: none;
   grid-template-columns: minmax(0, 560px) minmax(0, 560px);
   grid-template-rows: 1px auto;
   column-gap: 40px;
   min-width: 100%;
-  opacity: 0;
-  pointer-events: none;
 }
 
 .slider__item--active {
-  opacity: 1;
-  pointer-events: painted;
+  display: grid;
 }
 
 .slider__number-slide-wrapper {
@@ -1699,10 +1697,12 @@ img {
   display: block;
   max-width: 160px;
   flex-grow: 1;
+  margin-right: 7px;
 }
 
 .slider-services__button--current {
   position: static;
+  margin-right: 0;
   background-color: transparent;
   color: #ffe17f;
   cursor: default;
