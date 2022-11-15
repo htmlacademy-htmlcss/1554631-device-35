@@ -816,6 +816,7 @@ img {
   width: 100%;
   height: 40px;
   padding: 10px 48px;
+  font-family: "Rubik", "Arial", sans-serif;
   border: 2px solid #000000;
   border-radius: 50px 0 0 50px;
   font-size: 16px;
@@ -850,7 +851,12 @@ img {
 .menu__form-search::placeholder {
   font-size: 16px;
   line-height: 20px;
+  color: #000000;
   opacity: 0.3;
+}
+
+.menu__form-search--catalog::placeholder {
+  opacity: 1;
 }
 
 .menu__form-search:focus-visible {
